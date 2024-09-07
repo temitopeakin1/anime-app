@@ -1,0 +1,30 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+ color-scheme: dark;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+   color-scheme: dark;
+  }
+}
+
+.red-gradient {
+  background: linear-gradient(92deg, #ff5956 2.87%, #471b93 96.18%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+body {
+ background-color: #000000;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
